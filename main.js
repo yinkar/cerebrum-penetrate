@@ -1,4 +1,3 @@
-import './node_modules/nes.css/css/nes.css';
 import './style.css';
 
 import CerebrumPenetrate from './src/lib/CerebrumPenetrate';
