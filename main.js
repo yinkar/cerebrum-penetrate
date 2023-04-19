@@ -18,7 +18,17 @@ const keyCombination = [];
 document.querySelector('.input').addEventListener('keydown', e => {
   keyCombination.push(e.code);
 
-  if (keyCombination.length === 2 && keyCombination.includes('ControlLeft') && keyCombination.includes('Enter')) {
+  if (
+    keyCombination.length === 2 && (
+      (
+        keyCombination.includes('ControlLeft') ||
+        keyCombination.includes('ControlRight')
+      ) && (
+        keyCombination.includes('Enter') ||
+        keyCombination.includes('NumpadEnter')
+      )
+    )
+    ) {
     interprete();
   }
 });
